@@ -1,16 +1,18 @@
 import { Resolver, Query } from 'type-graphql';
 import { ProductDbDataSource } from '../../../db/product.db.datasource';
 import { Product } from './Product.type';
+import { getRepository } from 'typeorm';
+import { Products } from '../../../entities/Products';
 
 @Resolver()
 export class ProductListResolver{
 
-    constructor(private readonly productDbRepository: ProductDbDataSource) {}
+    private productDbRepository = getRepository(Products)
 
     @Query(returns => [Product])
-    productList() {
-        console.log(this.productDbRepository)
-        return this.productDbRepository.getAllProducts();
+    async productList() {
+        console.log(await this.productDbRepository.find())
+        return await this.productDbRepository.find();
     }
 }
 
