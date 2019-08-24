@@ -29,6 +29,4 @@ dist
 
 .awcache
 
-ormconfig.json
-
 yarn.lock
