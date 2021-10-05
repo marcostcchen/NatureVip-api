@@ -2,7 +2,7 @@
 
 Project backend for studies
 
-Running with Node, TypeORM and Graphql
+Running with Node, TypeORM, JWT Auth and Graphql
 
 With MongoDB
 
