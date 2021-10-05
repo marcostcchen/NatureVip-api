@@ -1,7 +1,9 @@
-# Awesome Project Build with TypeORM
+# Nature Vip API
 
-Steps to run this project:
+Project backend for studies
 
-1. Run `npm i` command
-2. Setup database settings inside `ormconfig.json` file
-3. Run `npm start` command
+Running with Node, TypeORM and Graphql
+
+With MongoDB
+
+Deploy on Heroku 
